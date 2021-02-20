@@ -34,8 +34,12 @@
   ```
   Please ensure you have node.js installed on your computer first. 
   In addition you will need access to a development environment such 
-  as VS Code and a terminal to run node scripts in.
+  as VS Code and a terminal to run node.js scripts in.
+
+  The link below provides a walkthrough of how to use the app:
   ```
+  https://drive.google.com/file/d/1Vf_Pavxcb-IbhtUxtOXPHZDHU8cc8Jq5/view?usp=sharing
+  
 
   ---
   ## Credits:
