@@ -14,7 +14,11 @@
 
   ## Description:
   ```
-  To create an application that generates a quality README file, based on a user's response to questions which reflect the contents of a good README file. The app is simple to use, making use of the command-line-interface CLI, allowing the user to enter text which is subsequently added to a README. Formatting is also taken care of, saving the user valuable time on their projects.
+  To create an application that generates a quality README file, based on a
+  user's response to questions which reflect the contents of a good README file. 
+  The app is simple to use, making use of the command-line-interface CLI, 
+  allowing the user to enter text which is subsequently added to a README. 
+  Formatting is also taken care of, saving the user valuable time on their projects.
   ```
   ---
 
@@ -28,7 +32,9 @@
   ---
   ## Instructions for use:
   ```
-  Please ensure you have node.js installed on your computer first. In addition you will need access to a development environment such as VS Code and a terminal to run node scripts in.
+  Please ensure you have node.js installed on your computer first. 
+  In addition you will need access to a development environment such 
+  as VS Code and a terminal to run node scripts in.
   ```
 
   ---
@@ -40,7 +46,7 @@
   ---
   ## Contributions:
   ```
-  Please feel free to fork this repository. The contents of my own personal repo are of course protected.
+  Please feel free to fork this repository. 
   ```
 
   ---
@@ -53,7 +59,6 @@
   ## Questions:  
   ```
   If you have any questions please find my Github username and my email address below:  
-  
   
   MJ-0001  
   mejones92@gmail.com
