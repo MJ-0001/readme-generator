@@ -1,12 +1,10 @@
 // Packages required for the application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const util = require('util');
 const generateMarkdown = require('./utils/generateMarkdown');
 
-
-// Array of questions for user 
-const questions = [
+// Inquirer prompt method called on object array to pose each question 
+inquirer.prompt([
 {
   type: 'input',
   message: 'What is the title of the project?',
@@ -16,11 +14,6 @@ const questions = [
   type: 'input',
   message: 'What is the purpose of the project?',
   name: 'description'
-},
-{
-  type: 'input',
-  message: 'Provide a table of contents',
-  name: 'contents'
 },
 {
   type: 'input',
@@ -38,12 +31,6 @@ const questions = [
   name: 'credits'
 },
 {
-  type: 'list',
-  message: 'What license is used?',
-  name: 'license',
-  options: ['Apache', 'GNU GPL', 'MIT', 'ISC', 'BSD 2', 'BSD 3']
-},
-{
   type: 'input',
   message: 'Guidelines for other contributors: ',
   name: 'contributions'
@@ -52,28 +39,33 @@ const questions = [
   type: 'input',
   message: 'What tests are included for the application: ',
   name: 'tests'
-}
-];
-
-inquirer.prompt(questions).then(answers => {
-  console.log('test')
-});
-
-
-
-
-
-// // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-  fs.writeFile(fileName, data);
-}
-
-// // TODO: Create a function to initialize app
-function init() {
-  const data = inquirer.prompt(questions);
-  const readme = generateMarkdown(data);
-  writeToFile('README.md', readme);
+},
+{
+  type: 'rawlist',
+  message: 'What license is used?',
+  name: 'license',
+  choices: ['Apache', 'MIT', 'BSD 2', 'BSD 3', 'none']
+},
+{
+  type: 'input',
+  message: 'Enter your Github username: ',
+  name: 'git'
+},
+{
+  type: 'input',
+  message: 'Enter your email address: ',
+  name: 'email'
 }
 
-// // Function call to initialize app
-init();
+]).then(answers => {
+  readMeFile(answers);
+})
+
+// Function to write answers to readme file
+function readMeFile(arr) {
+  const readme = generateMarkdown(arr)
+  fs.writeFile('README.md', readme, (err) =>
+  err ? console.error('error, please re-run the program') : console.log('Success!'));
+}
+
+
