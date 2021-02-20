@@ -7,12 +7,12 @@ const generateMarkdown = require('./utils/generateMarkdown');
 inquirer.prompt([
 {
   type: 'input',
-  message: 'What is the title of the project?',
+  message: 'What is the title of the project? ',
   name: 'title'
 },
 {
   type: 'input',
-  message: 'What is the purpose of the project?',
+  message: 'What is the purpose of the project? ',
   name: 'description'
 },
 {
@@ -56,7 +56,6 @@ inquirer.prompt([
   message: 'Enter your email address: ',
   name: 'email'
 }
-
 ]).then(answers => {
   readMeFile(answers);
 })
