@@ -14,11 +14,12 @@
 
   ## Description:
   ```
-  To create an application that generates a quality README file, based on a
+  The purpose of this application is to generate a quality README file, based on a
   user's response to questions which reflect the contents of a good README file. 
-  The app is simple to use, making use of the command-line-interface CLI, 
-  allowing the user to enter text which is subsequently added to a README. 
-  Formatting is also taken care of, saving the user valuable time on their projects.
+  The app is simple to use, making use of the command-line-interface CLI in either
+  terminal (Mac) or Bash/Shell (Windows). The user's responses are added to a README
+  file which is automatically generated. Formatting is also taken care of, 
+  saving the user valuable time on their projects.
   ```
   ---
 
