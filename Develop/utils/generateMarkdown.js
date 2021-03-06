@@ -51,6 +51,8 @@ function generateMarkdown(data) {
   - [Questions](#questions)
   - [License](#license)
   ---
+  ## Screenshot of deployed app:
+  ![screenshot]()
 
   ## Description:
   
