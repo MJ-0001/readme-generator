@@ -43,7 +43,7 @@ function generateMarkdown(data) {
 
   # Table of Contents
   - [Description](#description)
-  - [Installation](#install)
+  - [Installation](#installation)
   - [Instructions](#instructions)
   - [Credits](#credits)
   - [Contributions](#contributions)
@@ -62,7 +62,7 @@ function generateMarkdown(data) {
   ${data.install}
 
   ---
-  ## Instructions for use:
+  ## Instructions:
   ${data.instructions}
 
   ---
